@@ -6,15 +6,15 @@
     <a>Add New Card</a>
 </div>
 <div>
-    {% for car in cards%}
+    {% for card in cards%}
     <!--if exists-->
     <div>
         <div>
-            <img>
+            <img src="{{card.image}}" class="card-img-top p-3 bg-light" alt="{{card.name}}">
             <div>
-                <h4>Name</h4>
-                <p>HP:</p>
-                <p>Type:</p>
+                <h4>{{card.name}}</h4>
+                <p>HP:{{card.hp}}</p>
+                <p>Type:{{card.type}}</p>
             </div>
             <div>
                 <button>Remove</button>
