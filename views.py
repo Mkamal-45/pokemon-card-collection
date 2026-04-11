@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, session
+from flask import Blueprint, render_template, session, redirect, url_for, request
 
 views_blueprint = Blueprint('views', __name__)
 
@@ -34,3 +34,7 @@ def collection():
             }
         ]
     return render_template('collection.html', cards=session['cards'])
+
+@views_blueprint.route('/add', methods=['GET', 'POST'])
+def add_card():
+    return render_template('add_card.html')

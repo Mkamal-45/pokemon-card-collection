@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<div>
+    <div>
+        <div>
+            <div>
+                <h4>Add New Pokemon Card</h4>
+            </div>
+            <div>
+                <form action="{{url_for('views.add_card')}}" method="POST" enctype="multipart/form-data" id="addCardForm" novalidate>
+                    <div>
+                        <label>Pokemon Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div>Please enter the Pokemnon's name</div>
+                    </div>
+
+                    <div>
+                        <label>HP</label>
+                        <input type="number" id="hp" name="hp" required>
+                        <div>Please enter a valid number for HP.</div>
+                    </div>
+
+                    <div>
+                        <label>Card Type (Fire, Water, Steel etc)</label>
+                        <input type="text" id="type" name="type" required>
+                        <div>Please specify the Pokemon's type</div>
+                    </div>
+
+                    <div>
+                        <label>Upload Card Image</label>
+                        <input type="file" id="image" name="image" accept="image/png,image/jpeg,image/jpg" required>
+                        <div>Please upload an image file (only) for the card.</div>
+                    </div>
+                    <button type="submit">Add to Vault</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{%endblock%}

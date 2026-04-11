@@ -3,7 +3,7 @@
 {% block content%}
 <div>
     <h2>My Card Collection</h2>
-    <a href="{{url_for{'views.add_card'}}}">Add New Card</a>
+    <a href="{{url_for('views.add_card')}}">Add New Card</a>
 </div>
 <div>
     {% for card in cards%}
