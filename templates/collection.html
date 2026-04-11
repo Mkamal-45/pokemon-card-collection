@@ -5,9 +5,28 @@
     <h2>My Card Collection</h2>
     <a>Add New Card</a>
 </div>
-
 <div>
-
-</div>
-
+    {% for car in cards%}
+    <!--if exists-->
+    <div>
+        <div>
+            <img>
+            <div>
+                <h4>Name</h4>
+                <p>HP:</p>
+                <p>Type:</p>
+            </div>
+            <div>
+                <button>Remove</button>
+            </div>
+        </div>
+    </div>
+    {%else%}
+    <div>
+        <div>
+            Your collection is empty! 
+        </div>
+    </div>
+    {% endfor%}
+</div>  
 {%endblock%}
