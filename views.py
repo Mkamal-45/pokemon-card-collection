@@ -40,7 +40,8 @@ def add_card():
     return render_template('add_card.html')
 
 
-@views_blueprint.route('/remove', methods=['POST'])
-
-def remove_card():
+@views_blueprint.route('/remove/<int:card_id>', methods=['POST'])
+def remove_card(card_id):
+    session['cards'] = [card for card in session['cards'] if card['id'] != card_id]
+    session.modified = True
     return redirect(url_for('views.collection'))

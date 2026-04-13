@@ -1,31 +1,30 @@
 {% extends 'base.html'%}
 
 {% block content%}
-<div>
-    <h2>My Card Collection</h2>
-    <a href="{{url_for('views.add_card')}}">Add New Card</a>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="text-danger fw-bold">My Card Collection</h2>
+    <a href="{{url_for('views.add_card')}}" class="btn btn-outline-danger">Add New Card</a>
 </div>
-<div>
+<div "row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
     {% for card in cards%}
-    <!--if exists-->
-    <div>
-        <div>
+    <div class="col">
+        <div class="card h-100 shadow-sm border-danger">
             <img src="{{card.image}}" class="card-img-top p-3 bg-light" alt="{{card.name}}">
-            <div>
+            <div class="card-body">
                 <h4>{{card.name}}</h4>
                 <p>HP:{{card.hp}}</p>
                 <p>Type:{{card.type}}</p>
             </div>
-            <div>
-                <form action="{{ url_for('views.remove_card')}}" method="POST">
+            <div class="card-footer bg-white border-top-0">
+                <form action="{{ url_for('views.remove_card', card_id=card.id) }}" method="POST">
                     <button type="submit" class="btn btn-sm btn-danger w-100">Remove</button>
                 </form>
             </div>
         </div>
     </div>
     {%else%}
-    <div>
-        <div>
+    <div class="col-12">
+        <div class="alert alert-warning text-center" role="alert">
             Your collection is empty! 
         </div>
     </div>
