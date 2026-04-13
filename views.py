@@ -38,3 +38,9 @@ def collection():
 @views_blueprint.route('/add', methods=['GET', 'POST'])
 def add_card():
     return render_template('add_card.html')
+
+
+@views_blueprint.route('/remove', methods=['POST'])
+
+def remove_card():
+    return redirect(url_for('views.collection'))
