@@ -11,15 +11,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
             <a class="navbar-brand" href="/">Pokedex</a>
-            <div>
-                <ul>
-                    <li>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url_for('views.collection')}}">My Collection</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url_for('views.add_card')}}">Add Card</a>
                     </li>
                 </ul>
@@ -27,7 +27,7 @@
         </div>
     </nav>
 
-    <div>
+    <div "container mt-4">
         {%block content%}
         {%endblock%}
     </div>
