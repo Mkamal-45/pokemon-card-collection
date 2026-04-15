@@ -1,5 +1,36 @@
+/*!important to override boostrap color*/
+
 body{
     background-color: #f8f9fa;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.bg-danger {
+background-color: #cc0000 !important;
+
+}
+
+
+.btn-ultraball {
+    background-color: #f0e3e3; 
+    color: #f6d83a; 
+    border: 3px solid #f6d83a;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+.btn-ultraball {
+    background-color: #363636; 
+    color: #f6d83a; 
+    border: 3px solid #f6d83a;
+    border-radius: 50px; 
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
