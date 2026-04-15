@@ -11,13 +11,13 @@
         <div class="card h-100 shadow-sm border-danger">
             <img src="{{card.image}}" class="card-img-top p-3 bg-light" alt="{{card.name}}">
             <div class="card-body">
-                <h5 class="card-title fw-bold">{{card.name}}</h5>
-                <p class="card-text mb-1"><b>HP:</b> {{card.hp}}</p>
-                <p class="card-text mb-1"><b>Type:</b> {{card.type}}</p>
+                <h5 class="card-title retro-label">{{card.name}}</h5>
+                <p class="card-text retro-label"><b>HP:</b> {{card.hp}}</p>
+                <p class="card-text retro-label"><b>Type:</b> {{card.type}}</p>
             </div>
             <div class="card-footer bg-white border-top-0">
                 <form action="{{ url_for('views.remove_card', card_id=card.id) }}" method="POST">
-                    <button type="submit" class="btn btn-sm btn-danger w-100">Remove</button>
+                    <button type="submit" class="btn-retro-run bg-danger">Remove</button>
                 </form>
             </div>
         </div>
