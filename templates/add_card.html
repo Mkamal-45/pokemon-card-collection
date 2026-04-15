@@ -3,36 +3,36 @@
 
 <div class="row justify-content center">
     <div class="col-md-6">
-        <div class="card shadow-sm border-danger mt-4">
-            <div class="card-header bg-danger text-white">
+        <div class="card retro-form-card mt-4 mb-5">
+            <div class="card-header retro-form-header">
                 <h4 class="mb-0">Add New Pokemon Card</h4>
             </div>
             <div class="card-body p-4">
                 <form action="{{url_for('views.add_card')}}" method="POST" enctype="multipart/form-data" id="addCardForm" novalidate>
                     <div class="mb-3">
-                        <label for="name" class="form-label fw-bold">Pokemon Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                        <div class="invalid-feedback">Please enter the Pokemnon's name</div>
+                        <label for="name" class="retro-label">Pokemon Name</label>
+                        <input type="text" class="form-control retro-input" id="name" name="name" required>
+                        <div class="invalid-feedback" style="font-family: 'Press Start 2P', monospace; font-size: 8px;">Please enter the Pokemnon's name</div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="hp" class="form-label fw-bold">HP</label>
-                        <input type="number" class="form-control" id="hp" name="hp" required>
-                        <div class="invalid-feedback">Please enter a valid number for HP.</div>
+                        <label for="hp" class="retro-label">HP</label>
+                        <input type="number" class="form-control retro-input" id="hp" name="hp" required>
+                        <div class="invalid-feedback" style="font-family: 'Press Start 2P', monospace; font-size: 8px;">Please enter a valid number for HP.</div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="type" class="form-label fw-bold">Card Type (Fire, Water, Steel etc)</label>
-                        <input type="text" class="form-control" id="type" name="type" required>
-                        <div class="invalid-feedback">Please specify the Pokemon's type</div>
+                        <label for="type" class="retro-label">Card Type (Fire, Water, Steel etc)</label>
+                        <input type="text" class="form-control retro-input" id="type" name="type" required>
+                        <div class="invalid-feedback" style="font-family: 'Press Start 2P', monospace; font-size: 8px;">Please specify the Pokemon's type</div>
                     </div>
 
                     <div class="mb-4">
-                        <label for="image" class="form-label fw-bold">Upload Card Image</label>
-                        <input type="file" class="form-control" id="image" name="image" accept="image/png,image/jpeg,image/jpg" required>
-                        <div class="invalid-feedback">Please upload an image file (only) for the card.</div>
+                        <label for="image" class="retro-label">Upload Card Image</label>
+                        <input type="file" class="form-control retro-input" id="image" name="image" accept="image/png,image/jpeg,image/jpg" required>
+                        <div class="invalid-feedback" style="font-family: 'Press Start 2P', monospace; font-size: 8px;">Please upload an image file (only) for the card.</div>
                     </div>
-                    <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">Add to Vault</button>
+                    <button type="submit" class="btn-retro-run fw-bold">Add to Vault</button>
                 </form>
             </div>
         </div>

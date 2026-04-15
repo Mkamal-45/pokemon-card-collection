@@ -37,6 +37,14 @@ def collection():
                 'hp': '170',
                 'type': 'Fire',
                 'image': 'https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH3/SWSH3_EN_24.png'
+            },
+            {
+                'id': 4,
+                'name': 'ishowSp33d',
+                'hp': '232',
+                'type': 'Fire',
+                'image':'static/uploads/ishowspeed-zg33717.png'
+
             }
         ]
     return render_template('collection.html', cards=session['cards'])

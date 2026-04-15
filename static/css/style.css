@@ -9,6 +9,22 @@ body{
 background-color: #cc0000 !important;
 }
 
+.navbar-brand {
+    font-family: 'Press Start 2P', monospace !important;
+    font-size: 18px !important; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #8b0000;
+}
+
+.nav-link {
+    font-family: 'Press Start 2P', monospace !important;
+    font-size: 12px !important;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: #f6d83a !important; 
+}
+
 .btn-retro-run {
     font-family: 'Press Start 2P', monospace;
     background-color: #4888d8;
@@ -55,4 +71,46 @@ background-color: #cc0000 !important;
     font-size: 12px; 
     line-height: 2.5;
     color: #404040;
+}
+/*form change notes
+div/header/ label/ hover !important */
+
+.retro-form-card {
+    border: 4px solid #404040 !important;
+    border-radius: 15px !important;
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.2) !important;
+}
+
+.retro-form-header {
+    background-color: #f06868 !important;
+    border-bottom: 4px solid #404040 !important;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 16px;
+    text-shadow: 2px 2px 0px #404040;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px !important;
+    text-align: center;
+}
+
+.retro-label {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    color: #404040;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.retro-input {
+    border: 3px solid #404040 !important;
+    border-radius: 0 !important; 
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px !important;
+    padding: 10px !important;
+}
+
+.retro-input:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 3px #4888d8 !important; 
+    border-color: #404040 !important;
 }
