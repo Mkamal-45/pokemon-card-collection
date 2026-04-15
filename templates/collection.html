@@ -1,9 +1,9 @@
 {% extends 'base.html'%}
 
 {% block content%}
-<div class="text-center mb-5 pb-4 border-bottom border-2 border-danger">
-    <h2 class="display-6 text-danger fw-bold mb-3"> My Card Collection</h2>
-    <a href="{{url_for('views.add_card')}}" class="btn-ultraball text-decoration-none d-inline-block">Add New Card</a>
+<div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mb-5 pb-4 border-bottom border-2 border-danger">
+    <h1 class="header-retro-fight mb-0"> My Card Collection</h1>
+    <a href="{{url_for('views.add_card')}}" class="btn-retro-run text-decoration-none">Add New Card</a>
 </div>
 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
     {% for card in cards%}

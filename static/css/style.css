@@ -1,5 +1,5 @@
 /*!important to override boostrap color*/
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body{
     background-color: #f8f9fa;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,30 +7,38 @@ body{
 
 .bg-danger {
 background-color: #cc0000 !important;
-
 }
 
-
-.btn-ultraball {
-    background-color: #f0e3e3; 
-    color: #f6d83a; 
-    border: 3px solid #f6d83a;
-    border-radius: 50px;
-    padding: 10px 24px;
-    font-weight: 800;
+.btn-retro-run {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #4888d8;
+    color: white;
+    border: 4px solid #404040;
+    border-radius: 25px;
+    padding: 15px 30px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+    box-shadow: inset 0 0 0 4px white; 
+    text-shadow: 2px 2px 0px #404040;
+    transition: transform 0.1s;
 }
-.btn-ultraball {
-    background-color: #363636; 
-    color: #f6d83a; 
-    border: 3px solid #f6d83a;
-    border-radius: 50px; 
-    font-weight: 800;
+
+.btn-retro-run:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.header-retro-fight {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #f06868;
+    color: white;
+    border: 4px solid #404040;
+    border-radius: 25px;
+    padding: 15px 30px;
+    display: inline-block; 
+    box-shadow: inset 0 0 0 4px white;
+    text-shadow: 3px 3px 0px #404040;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+    margin-bottom: 0;
 }
