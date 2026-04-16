@@ -64,11 +64,11 @@ def add_card():
             filepath = os.path.join(UPLOAD_FOLDER, filename)
             file.save(filepath)
             new_card = {
-                'id': len(session.get('cards', [])) + 1,
+                'id': len(session.get('cards',[])) + 1,
                 'name': name,
                 'hp': hp,
                 'type': card_type,
-                'image': '/' + filepath.replace('\\', '/')
+                'image': '/' + filepath.replace('\\','/')
             }
             session['cards'].append(new_card)
             session.modified = True
